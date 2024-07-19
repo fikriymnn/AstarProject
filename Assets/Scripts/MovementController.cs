@@ -46,6 +46,7 @@ public class MovementController : MonoBehaviour
     Vector2 mousePos, mouseTemporaryPos;
 
     public bool isPc, isHandheld;
+    Vector3 jmp = new Vector3(0, 10, 0);
 
     private void Start()
     {
@@ -157,6 +158,7 @@ public class MovementController : MonoBehaviour
                     anim.SetBool("run", true);
                     anim.SetBool("walk", false);
                     anim.SetBool("idle", false);
+                    anim.ResetTrigger("jump");
                 }
 
                 moveSpeed = runSpeed;
@@ -169,6 +171,7 @@ public class MovementController : MonoBehaviour
                     anim.SetBool("run", false);
                     anim.SetBool("walk", true);
                     anim.SetBool("idle", false);
+                    anim.ResetTrigger("jump");
                 }
 
                 moveSpeed = walkSpeed;
@@ -239,7 +242,9 @@ public class MovementController : MonoBehaviour
     {
         if (isGrounded && jump)
         {
-            rb.AddForce(jumpForce * Vector3.up, ForceMode.Impulse);
+            //rb.AddForce(jumpForce * Vector3.up, ForceMode.Impulse);
+            
+            rb.AddForce(jumpForce * jmp, ForceMode.Impulse);
 
             anim.SetBool("idle", false);
             anim.SetBool("walk", false);
