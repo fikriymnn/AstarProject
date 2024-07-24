@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -20,14 +21,18 @@ public class EnemyAI : MonoBehaviour
     public string deathScene;
     public float aiDistance;
     public GameObject jumpscareCam;
-
+    Stopwatch sw = new Stopwatch();
+    public string txt;
+    
     void Start()
     {
         walking = true;
         currentDest = destinations[Random.Range(0, destinations.Count)];
+        sw.Start();
     }
     void Update()
     {
+        
         Vector3 direction = (player.position - transform.position).normalized;
         RaycastHit hit;
         aiDistance = Vector3.Distance(player.position, this.transform.position);
@@ -50,6 +55,7 @@ public class EnemyAI : MonoBehaviour
         }
         if (chasing == true)
         {
+            sw.Stop();
             dest = player.position;
             ai.destination = dest;
             ai.speed = chaseSpeed;
@@ -67,6 +73,7 @@ public class EnemyAI : MonoBehaviour
                 StartCoroutine(deathRoutine());
                 chasing = false;
             }
+            print(txt + sw.ElapsedMilliseconds + " ms");
         }
         if (walking == true)
         {
