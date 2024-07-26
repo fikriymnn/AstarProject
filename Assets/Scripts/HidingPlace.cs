@@ -43,7 +43,7 @@ public class HidingPlace : MonoBehaviour
             float distance2 = Vector3.Distance(monsterTransform2.position, normalPlayer.transform.position);
             if (distance > loseDistance)
             {
-                if (monsterScript1.chasing == true)
+                if (monsterScript1.chasing == true || monsterScript1.walking == true)
                 {
                     monsterScript1.stopChase();
                 }
@@ -51,7 +51,7 @@ public class HidingPlace : MonoBehaviour
 
             if (distance2 > loseDistance)
             {
-                if (monsterScript2.chasing == true)
+                if (monsterScript2.chasing == true || monsterScript2.walking == true)
                 {
                     monsterScript2.stopChase();
                 }
@@ -62,7 +62,9 @@ public class HidingPlace : MonoBehaviour
         {
             stopHideText.SetActive(true);
             hideText.SetActive(false);
-            
+            monsterScript1.sightDistance = 0;
+            monsterScript2.sightDistance = 0;
+
         }
     }
 
@@ -76,14 +78,14 @@ public class HidingPlace : MonoBehaviour
             float distance2 = Vector3.Distance(monsterTransform2.position, normalPlayer.transform.position);
             if (distance > loseDistance)
             {
-                if (monsterScript1.chasing == true)
+                if (monsterScript1.chasing == true || monsterScript1.walking == true)
                 {
                     monsterScript1.stopChase();
                 }
             }
             if (distance2 > loseDistance)
             {
-                if (monsterScript2.chasing == true)
+                if (monsterScript2.chasing == true || monsterScript2.walking == true)
                 {
                     monsterScript2.stopChase();
                 }
@@ -104,6 +106,8 @@ public class HidingPlace : MonoBehaviour
             normalPlayer.SetActive(true);
             hidingPlayer.SetActive(false);
             hiding = false;
+            monsterScript1.sightDistance = 5;
+            monsterScript2.sightDistance = 5;
         }
     }
 }

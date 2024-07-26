@@ -9,7 +9,7 @@ public class MovementController : MonoBehaviour
     Vector2 playerInput;
     float moveSpeed;
     public float walkSpeed, runSpeed;
-    GameObject playerParent;
+    public GameObject playerParent;
     bool isRunningKey, isRunningStick, isRunning;
     Animator anim;
     bool isGrounded;

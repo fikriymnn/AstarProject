@@ -15,11 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
+    path: Assets/Scenes/Level_3.unity
+    guid: 3af3976ce8d55487abee45dbc5472935
+  - enabled: 1
     path: Assets/Scenes/MissionSuccess.unity
     guid: 1aecfb163142f4d248f9a5f632493471
   - enabled: 1
     path: Assets/Scenes/MissionSuccess2.unity
     guid: 49f377e869cf24deaa9b55ba63b0832d
+  - enabled: 1
+    path: Assets/Scenes/MissionSuccess3.unity
+    guid: 1b552e11e4eee4e11bacd2538d3f227d
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 0fa82f7fc298a4063899aae21076cd78

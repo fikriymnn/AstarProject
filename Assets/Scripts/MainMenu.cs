@@ -17,6 +17,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void goToLevel3()
+    {
+        SceneManager.LoadScene("Level_3");
+    }
+
     public void pilihanLevel()
     {
         showPanelLevel.SetActive(true);

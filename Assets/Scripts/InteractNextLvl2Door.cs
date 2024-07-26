@@ -54,4 +54,9 @@ public class InteractNextLvl2Door : MonoBehaviour
     {
         SceneManager.LoadScene("MissionSuccess2");
     }
+
+    public void endGame()
+    {
+        SceneManager.LoadScene("MissionSuccess3");
+    }
 }

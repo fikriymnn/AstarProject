@@ -123,4 +123,10 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(jumpscareTime);
         SceneManager.LoadScene(deathScene);
     }
+    public IEnumerator neverChase()
+    {
+        walking = true;
+        chasing = false;
+        yield return new WaitForSeconds(walkSpeed);
+    }
 }

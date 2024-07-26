@@ -15,4 +15,9 @@ public class panelMisiBerhasil : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void level3()
+    {
+        SceneManager.LoadScene("Level_3");
+    }
 }
