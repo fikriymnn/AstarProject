@@ -23,7 +23,9 @@ public class EnemyAI : MonoBehaviour
     public GameObject jumpscareCam;
     Stopwatch sw = new Stopwatch();
     public string txt;
-    
+
+    public InteractNextLvl2Door inLvl2;
+
     void Start()
     {
         walking = true;
@@ -65,6 +67,7 @@ public class EnemyAI : MonoBehaviour
             if (aiDistance <= catchDistance)
             {
                 player.gameObject.SetActive(false);
+                inLvl2.hideText.SetActive(false);
                 aiAnim.ResetTrigger("walk");
                 aiAnim.ResetTrigger("idle");
                 aiAnim.ResetTrigger("sprint");

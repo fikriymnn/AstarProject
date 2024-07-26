@@ -9,8 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9a17f1ceb45604b9188d945e4e27f793
   - enabled: 1
+    path: Assets/Scenes/Level_1.unity
+    guid: a4754c75d38714d1aae7c10ee48a5f32
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
+  - enabled: 1
+    path: Assets/Scenes/MissionSuccess.unity
+    guid: 1aecfb163142f4d248f9a5f632493471
+  - enabled: 1
+    path: Assets/Scenes/MissionSuccess2.unity
+    guid: 49f377e869cf24deaa9b55ba63b0832d
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 0fa82f7fc298a4063899aae21076cd78
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: c5eb98cf676014cd3b44a145f3b55e35, type: 2}
