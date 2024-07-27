@@ -46,7 +46,7 @@ public class MovementController : MonoBehaviour
     Vector2 mousePos, mouseTemporaryPos;
 
     public bool isPc, isHandheld;
-    Vector3 jmp = new Vector3(0, 10, 0);
+    Vector3 jmp = new Vector3(0, 8, 0);
 
     private void Start()
     {

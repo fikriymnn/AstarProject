@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject showPanelLevel;
+    public GameObject showPanelLevel, showPanelPetunjuk, showPanelPlayerController, showPanelObjective;
 
     public void goToLevel1()
     {
@@ -25,5 +25,45 @@ public class MainMenu : MonoBehaviour
     public void pilihanLevel()
     {
         showPanelLevel.SetActive(true);
+    }
+
+    public void petunjuk()
+    {
+        showPanelPetunjuk.SetActive(true);
+    }
+
+    public void objective()
+    {
+        showPanelObjective.SetActive(true);
+    }
+
+    public void playerController()
+    {
+        showPanelPlayerController.SetActive(true);
+    }
+
+    public void closePanelLevel()
+    {
+        showPanelLevel.SetActive(false);
+    }
+
+    public void closePanelPetunjuk()
+    {
+        showPanelPetunjuk.SetActive(false);
+    }
+
+    public void closePanelPlayerController()
+    {
+        showPanelPlayerController.SetActive(false);
+    }
+
+    public void closePanelObjective()
+    {
+        showPanelObjective.SetActive(false);
+    }
+
+    public void quitApp()
+    {
+        Application.Quit();
     }
 }

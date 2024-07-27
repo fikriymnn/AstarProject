@@ -13022,8 +13022,8 @@ MonoBehaviour:
   - {fileID: 72850802}
   - {fileID: 1068539277}
   aiAnim: {fileID: 454471407}
-  walkSpeed: 1
-  chaseSpeed: 2.5
+  walkSpeed: 0.5
+  chaseSpeed: 2
   minIdleTime: 2
   maxIdleTime: 9
   idleTime: 0
@@ -25558,16 +25558,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d467a88bfb34f51ad9c726029674d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 2
-  runSpeed: 4
-  playerParent: {fileID: 0}
+  walkSpeed: 1
+  runSpeed: 3
+  playerParent: {fileID: 1280694077}
   groundCheckDistance: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 768
   gravity: 9
   gravityMultiplier: 1
-  jumpForce: 100
+  jumpForce: 70
   distance: {x: 0, y: 2, z: -2}
   lookAt: {fileID: 154429645}
   playerOrientation: {fileID: 189661913}
@@ -27859,8 +27859,8 @@ MonoBehaviour:
   - {fileID: 1264347734}
   - {fileID: 554371856}
   aiAnim: {fileID: 1329692403}
-  walkSpeed: 1
-  chaseSpeed: 2.5
+  walkSpeed: 0.5
+  chaseSpeed: 2
   minIdleTime: 2
   maxIdleTime: 9
   idleTime: 0

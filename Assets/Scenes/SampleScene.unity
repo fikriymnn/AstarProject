@@ -18881,16 +18881,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d467a88bfb34f51ad9c726029674d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 2
-  runSpeed: 4
-  playerParent: {fileID: 0}
+  walkSpeed: 1
+  runSpeed: 3
+  playerParent: {fileID: 385583019}
   groundCheckDistance: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 768
   gravity: 9
   gravityMultiplier: 1
-  jumpForce: 100
+  jumpForce: 70
   distance: {x: 0, y: 2, z: -2}
   lookAt: {fileID: 1873194497}
   playerOrientation: {fileID: 1423567656}
@@ -22868,8 +22868,8 @@ MonoBehaviour:
   - {fileID: 1017232360}
   - {fileID: 742384376}
   aiAnim: {fileID: 1727490470}
-  walkSpeed: 1
-  chaseSpeed: 2.5
+  walkSpeed: 0.5
+  chaseSpeed: 2
   minIdleTime: 2
   maxIdleTime: 9
   idleTime: 0
@@ -23116,8 +23116,8 @@ MonoBehaviour:
   - {fileID: 1017232360}
   - {fileID: 742384376}
   aiAnim: {fileID: 1770965583}
-  walkSpeed: 1
-  chaseSpeed: 2.5
+  walkSpeed: 0.5
+  chaseSpeed: 2
   minIdleTime: 2
   maxIdleTime: 9
   idleTime: 0
