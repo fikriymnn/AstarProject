@@ -30,7 +30,7 @@ public class EnemyAI : MonoBehaviour
     {
         walking = true;
         currentDest = destinations[Random.Range(0, destinations.Count)];
-        sw.Start();
+        
     }
     void Update()
     {
@@ -42,6 +42,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (hit.collider.gameObject.tag == "Player")
             {
+                //sw.Start();
                 walking = false;
                 StopCoroutine("stayIdle");
                 StopCoroutine("chaseRoutine");
@@ -51,13 +52,14 @@ public class EnemyAI : MonoBehaviour
         }
         if(aiDistance <= sightDistance)
         {
+            
             chasing = true;
             walking = false;
             StartCoroutine("chaseRoutine");
         }
         if (chasing == true)
         {
-            sw.Stop();
+            //sw.Stop();
             dest = player.position;
             ai.destination = dest;
             ai.speed = chaseSpeed;

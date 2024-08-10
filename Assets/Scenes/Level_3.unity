@@ -25567,7 +25567,7 @@ MonoBehaviour:
     m_Bits: 768
   gravity: 9
   gravityMultiplier: 1
-  jumpForce: 70
+  jumpForce: 80
   distance: {x: 0, y: 2, z: -2}
   lookAt: {fileID: 154429645}
   playerOrientation: {fileID: 189661913}

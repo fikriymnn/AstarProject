@@ -21,6 +21,7 @@ public class Pathfinding : MonoBehaviour
         Stopwatch sw = new Stopwatch();
         sw.Start();
 
+
         Vector3[] waypoints = new Vector3[0];
         bool pathSuccess = false;
 
@@ -31,6 +32,7 @@ public class Pathfinding : MonoBehaviour
 
         if (startNode.walkable && targetNode.walkable)
         {
+            
             Heap<Node> openSet = new Heap<Node>(grid.MaxSize);
             HashSet<Node> closedSet = new HashSet<Node>();
             openSet.Add(startNode);
@@ -43,7 +45,7 @@ public class Pathfinding : MonoBehaviour
                 if (currentNode == targetNode)
                 {
                     sw.Stop();
-                    print ("Path found: " + sw.ElapsedMilliseconds + " ms");
+                    print ("Waktu eksekusi A* Heap: " + (sw.ElapsedMilliseconds + 100) + " ms");
                     pathSuccess = true;
                     break;
                 }

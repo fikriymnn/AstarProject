@@ -86,6 +86,7 @@ public class MovementController : MonoBehaviour
 
     private void Update()
     {
+        
         isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundLayer);
 
         MovePlayer();
